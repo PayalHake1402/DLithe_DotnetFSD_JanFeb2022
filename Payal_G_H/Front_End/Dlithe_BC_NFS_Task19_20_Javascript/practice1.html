@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function herbivorous(plants,herbs)
+		{
+			this.plants=plants;
+			this.herbs=herbs;
+		
+			herbivorous.prototype.getherbivorous = function ()
+		{
+			//return plants +' and '+herbs +' '+"are herbivorous";
+			document.write(plants +' and '+herbs +' '+"are herbivorous"+"<br>");
+		}	
+	}
+	function omnivorous(plants,herbs,animals)
+	{
+    herbivorous.call(this,plants,herbs);
+    this.animals=animals;
+	omnivorous.prototype.getomnivorous = function ()
+		{
+			om.getherbivorous();
+			//document.write(plants +'
+document.write(plants +' and '+herbs +'and '+animals + " are omnivorous");
+		}
+}
+omnivorous.prototype = new herbivorous();
+omnivorous.prototype.constructor = omnivorous;
+var om = new omnivorous("a","b","c");
+om.getomnivorous();
+
+
+</script>
+</body>
+</html>

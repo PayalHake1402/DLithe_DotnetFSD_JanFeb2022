@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Choose your monster's colors:</p>
+
+<div>
+    <input type="color" id="head" name="head"
+           value="#e66465">
+    <label for="head">Head</label>
+</div>
+
+<div>
+    <input type="color" id="body" name="body"
+            value="#f6b73c">
+    <label for="body">Body</label>
+</div>
+
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">
+       <div>
+        <label for="uname">Choose a username: </label>
+        <input type="text" id="uname" name="name" required size="45"
+               pattern="[a-z]{4,8}" title="4 to 8 lowercase letters">
+        <span class="validity"></span>
+        <p>Usernames must be lowercase and 4-8 characters in length.</p>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+      <label for="dino-select">Choose a dinosaur:</label>
+      <select id="dino-select">
+          <optgroup label="Theropods">
+              <option>Tyrannosaurus</option>
+              <option>Velociraptor</option>
+              <option>Deinonychus</option>
+          </optgroup>
+          <optgroup label="Sauropods">
+              <option>Diplodocus</option>
+              <option>Saltasaurus</option>
+              <option>Apatosaurus</option>
+          </optgroup>
+      </select>
+      
+</body>
+</html>

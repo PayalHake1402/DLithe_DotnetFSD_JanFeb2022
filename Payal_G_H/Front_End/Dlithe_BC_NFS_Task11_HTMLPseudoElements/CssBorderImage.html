@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bitmap {
+  width: 200px;
+  background-color: #ffa;
+  border: 36px solid orange;
+  margin: 30px;
+  padding: 10px;
+
+  border-image:
+      url("border.png")  /* source */
+      27 /                    /* slice */
+      36px 28px 18px 8px /    /* width */
+      18px 14px 9px 4px       /* outset */
+      round;                  /* repeat */
+}
+
+    </style>
+</head>
+<body>
+    <div id="bitmap">This element is surrounded by a bitmap-based border image!</div>
+
+</body>
+</html>

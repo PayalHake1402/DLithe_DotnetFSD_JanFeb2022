@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+    <body>
+        <strong><q>INHERITENCE CREATION</q></strong>
+        <p id="p"></p>
+        <script>
+            function herbivorous(plants,herbs){
+                this.plants=plants;
+                this.herbs=herbs;
+            
+            
+                herbivorous.prototype.getherbivorous = function ()
+		{
+			return plants +' and '+herbs +' '+"are herbivorous";
+		}
+        
+ }
+function omnivorous(plants,herbs,animals){
+    herbivorous.call(this,plants,herbs);
+    this.animals=animals;
+}
+
+omnivorous.prototype.getherbivorous = function ()
+		{
+			return plants +' and '+herbs +' '+"are herbivorous" ;
+		}
+
+omnivorous.prototype = new herbivorous();
+omnivorous.prototype.constructor = omnivorous;
+var om = new omnivorous("a","b","c");
+document.write(om.getherbivorous());
+</script>
+
+</body>
+</html>

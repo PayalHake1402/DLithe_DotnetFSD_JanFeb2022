@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+	<center>
+		<h1 style="color: green;">
+			BlurFunction || OnChangeFunction || FocusFunction
+		</h1>
+
+		<input type="text" name="blur" id="blur"
+			onblur="BlurFunction()"
+			placeholder="Enter Name" />
+		<br /><br />
+
+		<select id="course" onchange="OnChangeFunction()">
+			<option value="Competitive Programming">
+				Competitive Programming
+			</option>
+
+			<option value="Operating System">
+				Operating System
+			</option>
+
+			<option value="Web Development">
+				Web Development
+			</option>
+
+			<option value="Android Development">
+				Android Development
+			</option>
+		</select>
+
+		<p id="demo"></p>
+		<br /><br />
+
+		<input type="text" id="focus"
+			onfocus="FocusFunction(this.id)"
+				placeholder="Enter Your Semester" /><br />
+	</center>
+
+	<script>
+		function BlurFunction() {
+			let x = document.getElementById("blur");
+			x.value = x.value.toUpperCase();
+		}
+
+		function OnChangeFunction() {
+			let x = document.getElementById("course").value;
+			document.getElementById("demo")
+				.innerHTML = "You selected: " + x;
+		}
+
+		function FocusFunction(x) {
+			document.getElementById(x)
+				.style.background = "green";
+		}
+	</script>
+
+<center>
+    <h1 style="color: green;">
+        MouseHover || OnClickFunction
+    </h1>
+      
+    <button onclick="OnClickFunction()">
+        Click me
+    </button>
+      
+    <p id="demo1"></p>
+    <br /><br />
+
+    <p onmouseover="MouseHover()">
+        Hover Mouse Here
+    </p>
+</center>
+<script>
+    function OnClickFunction() {
+        document.getElementById("demo1")
+            .innerHTML = "PAYAL HAKE";
+    }
+
+    function MouseHover() {
+        alert("Mouse move over");
+    }
+</script>
+
+</body>
+
+</html>
+

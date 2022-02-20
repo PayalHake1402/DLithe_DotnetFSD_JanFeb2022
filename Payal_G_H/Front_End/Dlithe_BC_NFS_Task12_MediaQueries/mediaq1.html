@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background: white;
+}
+
+.details {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* Mobile first, we start from the smallest viewport width */
+
+/* From 320px and up */
+@media (min-width: 320px) {
+ body {
+   background-color: blue;
+ }
+}
+
+/* From 768px and up */
+@media (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* From 1024px and up */
+@media (min-width: 1024px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* From 1224px and up */
+@media (min-width: 1224px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/* From 1824px and up */
+@media (min-width: 1824px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+/*  max-width query */
+/* From 850px and up, until 950px  */
+@media (min-width: 850px) and (max-width: 950px) {
+  body {
+    background-color: purple;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1>CSS Media Queries</h1>
+    <p>The background will change according to the viewport width change.</p> <br> <br>
+  
+    <h3>Smartphones - <span class="details">from 320px and up </span>(min-width: 320px)</h3>
+    <p>BLUE</p>
+    <br>
+  
+    <h3>Tablets, iPads (portrait) - <span class="details">from 768px and up</span> (min-width: 768px)</h3>
+    <p>GREEN</p>
+    <br>
+  
+    <h3>Tablets, iPads (landscape) - <span class="details">from 1024px and up  </span>(min-width: 1024px)</h3>
+    <p>YELLOW</p>
+    <br>
+  
+    <h3>Desktops and laptops  - <span class="details">from 1224px and up </span>(min-width: 1224px)</h3>
+    <p>ORANGE</p>
+    <br>
+  
+    <h3>Large screens  - <span class="details">from 1824px and up </span>(min-width: 1824px)</h3>
+    <p>AQUA (zoom out if needed  [Ctrl & - ] )</p>
+    <br>
+  
+    <h3>Custom media query - <span class="details">from 850px and up, until 950px </span>(min-width: 850px) and (max-width: 950)</h3>
+    <p>	PURPLE (zoom out if needed  [Ctrl & - ] )</p>
+    <br>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<body onload="mymessage()">
+<script src="index.js"></script>
+    <h1 onmouseover="style.color='red'"
+onmouseout="style.color='black'">
+Mouse over this text</h1>
+
+Enter your name: <input type="text" onfocus="myFunction(this)">
+
+  <!-- ======= When the input field gets focus, a function is triggered which changes the background-color.
+ ======= -->
+
+
+
+<img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="bulboff.gif" width="100" height="180" />
+
+<!--Click mouse and hold down! -->
+<br>
+<br>
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+<br>
+<br>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+
+<h2>JavaScript HTML Events</h2>
+Enter your name: <input type="text" id="fname" onchange="upperCase()">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+</body>
+</html>

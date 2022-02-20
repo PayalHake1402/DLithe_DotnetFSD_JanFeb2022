@@ -1,0 +1,15 @@
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\bin\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.exe
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\bin\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.deps.json
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\bin\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.runtimeconfig.json
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\bin\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.dll
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\bin\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.pdb
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.csproj.AssemblyReference.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.AssemblyInfoInputs.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.AssemblyInfo.cs
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.csproj.CoreCompileInputs.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.dll
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\refint\DLithe_BC_NFS_T_Task27_CSharp.dll
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.pdb
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\DLithe_BC_NFS_T_Task27_CSharp.genruntimeconfig.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Payal_G_H\Front_End\C-Sharp\DLithe_BC_NFS_T_Task27_CSharp\obj\Debug\net6.0\ref\DLithe_BC_NFS_T_Task27_CSharp.dll

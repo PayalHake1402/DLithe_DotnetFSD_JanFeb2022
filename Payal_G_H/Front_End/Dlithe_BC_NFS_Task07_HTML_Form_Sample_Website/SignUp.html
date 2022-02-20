@@ -1,0 +1,105 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        .hero-image {
+            background-image: url("4.jfif");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+          }
+          body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+.button1 {border-radius: 12px;
+    border: 2px solid #008CBA;
+}
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+        </style>
+          
+    </head>
+    <body class="hero-image">
+        
+        <h1 style="text-align: center;">Welcome to DLithe</h1>
+
+        <form action="SignIn.html" method="get" class="form-example">
+            <h3>Registration Details</h3>
+            <div style=" border: 0ch;">
+                <label>Title</label>
+                <label><input type="radio" name="radio"> Mr</label>
+                <label><input type="radio" name="radio"> Mrs</label>
+                <label><input type="radio" name="radio"> Miss</label>
+
+            </div>
+            <br>
+            
+            <div class="form-example">
+            <label for="name">First Name: </label><br>
+            <input type="text" name="first_name" id="name" placeholder="First Name" required>
+            </div>
+            <br>
+            <div class="form-example">
+                <label for="name">Last Name: </label><br>
+                <input type="text" name="last_name" id="name" placeholder="Last Name" required>
+            </div>
+            <br>
+
+            <div class="form-example">
+            <label for="email">Email: </label><br>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <br>
+
+            <div class="form-example">
+                <label for="email">Phone Number: </label><br>
+                <input type="tel" name="phone_number" id="phone_number" placeholder="Phone Number" required>
+            </div>
+            <br>
+
+            <div class="form-example">
+                <label for="email">Password </label><br>
+                <input type="password" name="Password" placeholder="Password" required>
+            </div>
+            <br>
+
+            <label for="pet-select">Country</label><br>
+
+            <select id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Japan</option>
+                <option value="cat">India</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="spider">Spider</option>
+                <option value="goldfish">Goldfish</option>
+            </select>
+            <br>
+            <br>
+
+        <div>
+        <input type="checkbox" id="scales" name="scales"
+                checked>
+        <label for="scales">I agree the <a href=https://Google.com> Terms and Condition</a>Terms</label>
+    </div>
+        <br>
+        <button class="button button1" type="submit">Sign Up</button>
+        <button class="button button1" type="reset">Reset Form</button>
+
+                </form>
+                
+        </body>
+        </html>

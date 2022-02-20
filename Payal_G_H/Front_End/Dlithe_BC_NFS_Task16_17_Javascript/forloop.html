@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<body style = "text-align:center;">
+
+<h1 style = "color:green;" >
+Web Development
+</h1>
+
+<button onclick="GFG()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function GFG() {
+var Platform= {fname:"Payal", Mname:"for", lname:"Hake", };
+	
+var text = "";
+var x;
+for (x in Platform) {
+	text += Platform[x] + " ";
+}
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

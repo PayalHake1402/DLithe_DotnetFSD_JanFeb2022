@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Methods</title>
+</head>
+<body style="text-align: center;">
+<h2 style="color: green;">1] toString()</h2>
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+
+<h2 style="color: green;">2] join()</h2> 
+<p>The join() method joins array elements into a string.</p>
+<p>It this example we have used " * " as a separator between the elements:</p>
+
+<p id="demo1"></p>
+
+<script>
+const cars = ["Maruti", "SUV", "Swift", "Alto"];
+document.getElementById("demo1").innerHTML = cars.join(" * ");
+</script>
+
+<h2 style="color: green;">3] pop()</h2>
+<p>The pop() method removes the last element from an array.</p>
+
+<p id="pop1"></p>
+<p id="pop2"></p>
+
+<script>
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("pop1").innerHTML = fruits1;
+fruits1.pop();
+document.getElementById("pop2").innerHTML = fruits1;
+</script>
+
+
+<h2 style="color: green;">2.1] pop()</h2>
+<p>The pop() method returns the value that was "popped out":</p>
+
+<p id="popo"></p>
+<p id="popo1"></p>
+
+<script>
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("popo").innerHTML = fruits2.pop();
+document.getElementById("popo1").innerHTML = fruits2;
+</script>
+
+
+<h2 style="color: green;">3] push()</h2>
+<p>The push() method appends a new element to an array:</p>
+
+<p id="push1"></p>
+<p id="push2"></p>
+
+<script>
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("push1").innerHTML = fruits3;
+fruits3.push("Kiwi");
+document.getElementById("push2").innerHTML = fruits3;
+</script>
+
+<h2 style="color: green;">3.1] push()</h2>
+<p>The push() method returns the new array length:</p>
+
+<p id="pushh"></p>
+<p id="pushh1"></p>
+
+<script>
+const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("pushh").innerHTML = fruits4.push("Kiwi");
+document.getElementById("pushh1").innerHTML = fruits4;
+</script>
+
+<h2 style="color: green;">4] shift()</h2>
+<p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+
+<p id="tech"></p>
+<p id="tech1"></p>
+
+<script>
+const lang = ["Html", "CSS", "JS", ".Net"];
+document.getElementById("tech").innerHTML = lang;
+lang.shift();
+document.getElementById("tech1").innerHTML = lang;
+</script>
+
+
+<h2 style="color: green;">4.1] shift()</h2>
+<p>The shift() method returns the element that was shifted out.</p>
+
+<p id="techno"></p>
+<p id="techno1"></p>
+
+<script>
+const languages = ["HTML", "CSS", "JS", ".NET"];
+document.getElementById("techno").innerHTML = languages.shift();
+document.getElementById("techno1").innerHTML = languages;
+</script>
+
+<h2 style="color: green;">5] unshift()</h2>
+<p>The unshift() method adds new elements to the beginning of an array:</p>
+
+<p id="uns"></p>
+<p id="uns1"></p>
+
+<script>
+const arr = ["AAA", "BBB", "CCC", "DDD"];
+document.getElementById("uns").innerHTML = arr;
+arr.unshift("EEE");
+document.getElementById("uns1").innerHTML = arr;
+</script>
+
+
+<h2 style="color: green;">5.1] unshift()</h2>
+<p>The unshift() method returns the length of the new array:</p>
+
+<p id="unshift"></p>
+<p id="unshift1"></p>
+
+<script>
+const letter = ["UUU", "VVV", "WWW", "XXX"];
+document.getElementById("unshift").innerHTML = letter.unshift("YYY");
+document.getElementById("unshift1").innerHTML = letter;
+</script>
+
+
+<h2 style="color: green;">6] Array elements are accessed using their index number:</h2>
+
+<p id="indx"></p>
+<p id="indx1"></p>
+
+<script>
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("indx").innerHTML = fruit;
+fruit[0] = "Kiwi";
+document.getElementById("indx1").innerHTML = fruit;
+</script>
+
+<h2 style="color: green;">7] The length property provides an easy way to append new elements to an array without using the push() method:</h2>
+
+<p id="len"></p>
+<p id="len1"></p>
+
+<script>
+const array = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("len").innerHTML = array;
+array[array.length] = "Kiwi";
+document.getElementById("len1").innerHTML = array;
+</script>
+
+<h2 style="color: green;">8] concat()</h2>
+<p>The concat() method merges (concatenates) arrays:</p>
+
+<p id="concat"></p>
+
+<script>
+const array11 = ["Cecilie", "Lone"];
+const array22 = ["Emil", "Tobias", "Linus"];
+const array33 = ["Robin", "Morgan"];
+
+const myChildren = array11.concat(array22, array33); 
+
+document.getElementById("concat").innerHTML = myChildren;
+</script>
+
+<h2 style="color: green;">9] splice()</h2>
+<p>The splice() method adds new elements to an array:</p>
+
+<p id="splice"></p>
+<p id="splice1"></p>
+
+<script>
+const fru = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("splice").innerHTML = fru;
+
+fru.splice(2, 0, "Lemon", "Kiwi");
+document.getElementById("splice1").innerHTML = fru;
+</script>
+
+<!--The slice() method creates a new array.
+
+The slice() method does not remove any elements from the source array.
+All JavaScript objects have a toString() method.
+
+
+
+-->
+
+<h2 style="color: green;">10] toString()</h2>
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="tostring"></p>
+
+<script>
+const frui = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("tostring").innerHTML = frui.toString();
+</script>
+
+</body>
+</html>
+
+

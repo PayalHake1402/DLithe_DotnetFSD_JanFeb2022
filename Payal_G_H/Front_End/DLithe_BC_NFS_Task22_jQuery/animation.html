@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript"
+src="https://code.jquery.com/jquery-1.12.0.min.js">
+	</script>
+	
+	<style>
+		#circle {
+			height: 150px;
+			width: 150px;
+			margin-top: 30px;
+			padding: 10px;
+			background-color: #00b3b3;
+			border-radius: 50%;
+			display: inline-block;
+			position: absolute;
+		}
+
+		#btn {
+			padding: 20px;
+			font-size: 14px;
+		}
+	</style>
+	
+	<script>
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("#circle").animate({
+					height: "400px",
+					width: "400px"
+				}, 3000, animationcomplete);
+			});
+
+			function animationcomplete() {
+				alert("animation is completed");
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<button id="btn">Animate</button>
+	<div id="circle"></div>
+</body>
+
+</html>

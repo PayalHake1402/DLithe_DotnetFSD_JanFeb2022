@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+  font-family: cursive	;
+  text-align: center;
+  text-shadow: 4px 4px 5px red;
+
+}
+
+.firstsection {
+    background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-shadow: #FC0 1px 0 10px;
+			height: 200px;
+            box-shadow: 10px 5px 5px rgb(141, 139, 139);
+            border-radius: 10px 100px / 120px;		
+            opacity: 0.5;
+        }
+        .secondsection {
+            background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			height: 200px;
+            text-shadow: #FC0 1px 0 10px;
+            box-shadow: 10px 5px 5px rgb(141, 139, 139);
+            border-radius: 10px 100px / 120px;
+            opacity: 0.9;
+		}
+
+/*Nav bar*/
+.navbar {
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+            border-top: 0;
+            border-radius: 30px;
+		}
+        .nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+        .nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: rgb(0, 0, 0);
+            font-size: 25px;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+        .background {
+			background: #59C173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			
+		}
+
+        /*Pseudo ele*/
+        li {
+  padding:0.0em;
+  
+}
+
+li[aria-current='step'] {
+  font-weight:bold;
+}
+
+li[aria-current='step']::after {
+  content: " \21E6"; /* Hexadecimal for Unicode Leftwards white arrow*/
+  display: inline;
+}
+
+p::first-letter {
+  color: red;
+  font-size: 150%;
+}
+/*overflow*/
+
+p.scroll {
+        overflow: scroll;
+      }
+      
+      .scroll {
+        margin: 1em;
+        font-size: 1.2em;
+        width: 8em;
+        height: 5em;
+        border: dotted;
+        background: #a8c0ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .left {
+  float: left;
+  background: pink;
+  margin: 5px;
+  width: 50px;
+  height: 100px;
+
+}
+
+.right {
+  float: right;
+  background: cyan;
+  margin: 5px;
+  width: 50px;
+  height: 100px;
+
+}
+
+@media screen and (min-width: 600px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Web Development</h1>
+
+    <nav class="navbar background">
+		<ul class="nav-list">
+			<div >
+			</div>
+			<li><a href="#web">Web Technology</a></li>
+			<li><a href="#program">C Programming</a></li>
+			<li><a href="#course">Courses</a></li>
+		</ul>
+
+	</nav>
+
+
+<section class="firstsection">
+    <div class="box-main">
+        <div class="firstHalf">
+            <h1 class="text-big" id="web">HTML</h1>
+            <p class="text-small">
+                HTML stands for HyperText Markup Language.
+                It is used to design web pages using a markup
+                language. HTML is the combination of Hypertext
+                and Markup language. Hypertext defines the
+                link between the web pages. A markup language
+                is used to define the text document within tag
+                which defines the structure of web pages.
+                HTML is a markup language that is used by the
+                browser to manipulate text, images, and other
+                content to display it in the required format.
+            
+            </p>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="secondsection">
+    <div class="box-main">
+        <div class="firstHalf">
+            <h1 class="text-big" id="program">
+CSS            </h1>
+            <p class="text-small ">
+                CSS is used to control the style of
+    a web document in a simple and easy way.
+    CSS is the acronym for "Cascading Style Sheet". 
+    This tutorial covers both the versions CSS1,CSS2 and CSS3, 
+    and gives a complete understanding of CSS, 
+    starting from its basics to advanced concepts.
+    Three Types of CSS
+  <ol>
+      <li>Internal CSS.</li>
+    <li aria-current='step'>External CSS.</li>
+<li> Inline CSS.</li>
+</ol>
+            </p>
+
+
+        </div>
+    </div>
+</section>
+
+
+<div>
+    <p class="scroll">
+     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+    </p>
+  </div>
+
+  <div class="left">1</div>
+  <div class="left">2</div>
+  <div class="right">3</div>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Properties</title>
+</head>
+<body>
+    <h2>1] Length</h2>
+
+<p>The length property returns the length of a string:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+
+<h2>2] Slice()</h2>
+
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="slice"></p>
+
+<script>
+let slice_str = "Apple, Banana, Kiwi";
+document.getElementById("slice").innerHTML = slice_str.slice(7,13); 
+</script>
+
+
+<h2>3] Substring()</h2>
+
+<p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+<p id="substring"></p>
+
+<script>
+let sub_str = "Apple, Banana, Kiwi";
+document.getElementById("substring").innerHTML = sub_str.substring(7,13);
+</script>
+
+
+<h2>4] Replace()</h2>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="repl">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("repl").innerHTML =
+  text.replace("Microsoft","W3Schools");
+}
+</script>
+
+
+<!---->
+<h2> 5] toUpperCase() || toLowerCase() </h2>
+<p>Convert string to upper case:</p>
+
+<button onclick="myFunctionUp()">Try it</button>
+
+<p id="up">Hello World!</p>
+
+<script>
+function myFunctionUp() {
+  let text = document.getElementById("up").innerHTML;
+  document.getElementById("up").innerHTML =
+  text.toUpperCase();
+}
+</script>
+
+
+<button onclick="myFunctionLow()">Try it</button>
+
+<p id="low">Hello World!</p>
+
+<script>
+function myFunctionLow() {
+  let text = document.getElementById("low").innerHTML;
+  document.getElementById("low").innerHTML =
+  text.toLowerCase();
+}
+</script>
+
+
+<!---->
+<h2>6] concat() </h2>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="concat"></p>
+
+<script>
+let text1 = "Hello";
+let text2 = "World!";
+let text3 = text1.concat(" ",text2);
+document.getElementById("concat").innerHTML = text3;
+</script>
+
+<h1>7] trim()</h1>
+<h2>The trim() method removes whitespace from both sides of a string:
+
+</h2>
+
+<p id="trim"></p>
+
+<script>
+let text11 = "     Hello World!     ";
+let text22 = text11.trim();
+
+document.getElementById("trim").innerHTML =
+"Length text11=" + text11.length + "<br>Length2 text22=" + text22.length;
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+    function Employee(firstN, lastN, designation, mobile) {
+      this.firstName = firstN;
+      this.lastName = lastN;
+      this.designation = designation;
+      this.mobileN = mobile;
+    }
+    Employee.prototype.location = "Pune";
+    
+    
+    Employee.prototype.name = function() {
+      return this.firstName + " " + this.lastName + " " + this.designation + " " + this.mobileN + " " };
+    
+    
+    const myFather = new Employee("Payal", "Hake", "Web developer", 7057);
+    document.getElementById("demo").innerHTML =
+    "The Employee Details is " + myFather.location + " " + myFather.name(); 
+    </script>
+    
+    
+
+</body>
+</html>

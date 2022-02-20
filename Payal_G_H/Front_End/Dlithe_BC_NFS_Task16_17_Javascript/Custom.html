@@ -1,0 +1,47 @@
+<html>
+<body>
+<script>
+	let x = 5;
+	const event = new CustomEvent("start", {
+	detail: {
+		platform : "Web Development"
+	}
+	});
+	
+	document.addEventListener('start', (e) => {
+	console.log(
+		`Start event triggered on platform
+		${e.detail.platform}`
+	);
+	})
+	
+	if (x == 5) {
+	document.dispatchEvent(event);
+	}
+
+
+    let globalVar = "This is a global variable";
+
+function fun() {
+let localVar = "This is a local variable";
+
+console.log(globalVar);
+console.log(localVar);
+}
+
+fun();
+
+let globalVar1 = "This is a global variable";
+
+function fun1() {
+let localVar1 = "This is a local variable";
+}
+
+fun1();
+
+console.log(globalVar1);
+console.log(localVar1);
+
+</script>
+</body>
+</html>

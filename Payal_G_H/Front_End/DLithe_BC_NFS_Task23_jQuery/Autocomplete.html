@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href=
+	"//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js">
+	</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+	</script>
+
+	<script>
+		$(function () {
+			var list = [
+				"One",
+				"two",
+				"Three",
+				"Four",
+			];
+			$("#gfg").autocomplete({
+				source: list
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h1 style="color: green;">Web Development</h1>
+	<h3>jQuery UI Autocomplete source Option</h3>
+
+	<label for="gfg">Enter Text:</label>
+	<input id="gfg">
+</body>
+
+</html>
